@@ -1,0 +1,101 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <meta name="keywords" content="">
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0">
+  
+  <title>Cordova Plugin Registry</title>
+  <!-- <link rel="stylesheet" type="text/css" href="css/topcoat-mobile-light.min.css" /> -->
+  <!-- <link rel="stylesheet" type="text/css" href="css/grid.min.css"> -->
+  <link href="css/styles.css" rel="stylesheet" type="text/css">
+  <link href="images/favicon.ico" rel="shortcut icon" type="image/x-icon">
+
+  <!-- @ifndef PRODUCTION -->
+  <script src="http://localhost:35729/livereload.js"></script>
+  <!-- @endif -->
+
+</head>
+
+<body ng-app="registry">
+
+  <div id="header" class="">
+    <div class="header-content row">
+        <div class="column-5--lap column-11--hand offset-1--hand">
+            <div class="row center">
+                <a href="/" title="Home">
+                    <div class="registry-logo pluggy-logo top-logo column-1--hand"></div>
+                </a>
+                <div class="column-8--hand column-10--lap">
+                    <div class="row">
+                        <a href="/" title="Home">
+                            <div class="top-project-text column-12--hand">Apache Cordova</div>
+                        </a>
+                    </div>
+                    <div class="row">
+                        <a href="/" title="Home">
+                            <div class="top-plugins-registry-text column-12--hand">Plugins Registry</div>
+                        </a>
+                    </div>
+                 </div>
+            </div>
+      </div>
+    </div>
+  </div>
+  <div id="banner" class="row center">
+    <div class="row">
+      <h2>Plugins Registry is moving to npm.<br>Click <a href="npm/index.html">here</a> to go to new search page.</h2>
+    </div>
+  </div>
+
+  <div id="content-wrapper" ng-view>
+  </div>
+
+  <div id="footer">
+    <div class="row">
+      <div class="column-10--hand offset-1--hand column-2--lap offset-2--lap">
+        <a href="https://issues.apache.org/jira/browse/CB/component/12321101">Plugin Registry Issue Tracker</a>
+      </div>
+      <div class="column-10--hand offset-1--hand column-2--lap">
+        <a href="http://cordova.apache.org/">Apache Cordova Home</a>
+      </div>
+    </div>
+    <div class="row">
+      <div class="column-10--hand offset-1--hand column-10--lap offset-2--lap left">
+        <p>Copyright &copy; 2012, 2013, 2014 The Apache Software Foundation, Licensed under the Apache License, Version 2.0</p>
+        <p>Apache and the Apache feather logos are trademarks of The Apache Software Foundation.</p>
+      </div>
+    </div>
+  </div>
+
+  <script type="text/javascript" src="js/lib/angular.min.js"></script>
+  <script type="text/javascript" src="js/lib/angular-route.min.js"></script>
+  <script type="text/javascript" src="js/lib/angular-sanitize.min.js"></script>
+  <script type="text/javascript" src="js/lib/moment.min.js"></script>
+  <script type="text/javascript" src="js/app.js"></script>
+  <script type="text/javascript" src="js/services.js"></script>
+  <script type="text/javascript" src="js/lib/marked.js"></script>
+  <script type="text/javascript" src="js/controllers.js"></script>
+  <script type="text/javascript" src="js/controllers/home.js"></script>
+  <script type="text/javascript" src="js/controllers/packageDetails.js"></script>
+  <script type="text/javascript" src="js/controllers/viewAll.js"></script>
+  <script type="text/javascript" src="js/controllers/search.js"></script>
+  <script type="text/javascript" src="js/directives/topbar.js"></script>
+  <script type="text/javascript" src="js/directives/pluginlist.js"></script>
+  <script type="text/javascript" src="js/directives/ng-enter.js"></script>
+  <script type="text/javascript" src="js/filters/platformFilter.js"></script>
+  <script>
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+    ga('create', 'UA-64283057-5', 'auto');
+    ga('send', 'pageview');
+  </script>
+</body>
+</html>

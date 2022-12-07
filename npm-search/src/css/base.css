@@ -1,0 +1,489 @@
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: 'Segoe UI', tahoma, arial, helvetica, sans-serif;
+  font-size: 1.6em;
+  margin: 0;
+}
+
+
+/*---------------------------------------------------
+    Pluggy and msg
+---------------------------------------------------*/
+#headblock {
+  background: url('../img/grid.png');
+  padding-bottom: 1rem;
+}
+
+#topcontent {
+  padding-top: 2.5rem;
+  text-align: center;
+  max-width: 80rem;
+  margin: 0 auto;
+}
+
+#pluggy {
+  background: transparent url('../img/pluggy.png') no-repeat;
+  background-size: contain;
+  width: 10rem;
+  height: 20rem;
+  margin-left: 2.5rem;
+}
+
+#discovermessage {
+  display: inline-block;
+  max-width: 60rem;
+  vertical-align: top;
+}
+
+#discovermessage h1 {
+  background-color: white;
+  text-align: left;
+  font-family: 'Segoe UI', tahoma, arial, helvetica, sans-serif;
+}
+
+/*---------------------------------------------------
+    Searchbox
+---------------------------------------------------*/
+
+#search {
+  margin: 2.5rem auto 0 auto;
+  border: 2px solid gray;
+  background-color: white;
+}
+
+#search .searchBox {
+  display: block;
+  height: 3.5rem;
+  width: 100%;
+  border: 0;
+  background: none;
+  outline: 0;
+  font-size: 1.4rem;
+  padding: 0 5px 0 35px;
+  color: #363636;
+  background: url('../img/search.png') no-repeat;
+  background-position: 5.5px 5.5px;
+}
+
+#supportedPlatforms div {
+  margin: 12px 2px 2px 0;
+  border: 1px solid #363636;
+  border-radius: 8px;
+  padding: .4em .5em;
+  height: 11px;
+  font-size: 11px;
+  line-height: 11px;
+  display: inline-block;
+  align-items: center;
+
+}
+
+/*---------------------------------------------------
+    Plugin List
+---------------------------------------------------*/
+
+.pluginList {
+  list-style-type: none;
+  padding: 0px;
+}
+
+.pluginList li {
+  margin: 0 0 2rem 0;
+}
+
+/*---------------------------------------------------
+    PluginCards
+---------------------------------------------------*/
+.pluginCard {
+  position: relative;
+  border: 1px solid #CDCDCD;
+  background: white;
+  min-height: 3em;
+  padding: 0.2rem 1rem 0.5rem 1rem;
+}
+
+.pluginCard:after {
+  z-index: -1;
+  position: absolute;
+  content: "";
+  bottom: 18px;
+  right: 2px;
+  left: auto;
+  width: 50%;
+  top: 80%;
+  max-width:300px;
+  background: #777;
+  -webkit-box-shadow: 0 15px 10px #777;
+  -moz-box-shadow: 0 15px 10px #777;
+  box-shadow: 0 15px 10px #777;
+  -webkit-transform: rotate(3deg);
+  -moz-transform: rotate(3deg);
+  -o-transform: rotate(3deg);
+  -ms-transform: rotate(3deg);
+  transform: rotate(3deg);
+}
+
+.pluginCard h3 {
+  margin: 0 0.2rem 0.1rem 0;
+  font-size: 1.5em;
+  display: inline-block;
+}
+
+.pluginCard a:link,
+.pluginCard a:visited {
+  text-decoration: none;
+  color: #404D58;
+}
+
+.pluginCard a:hover,
+.pluginCard a:active {
+  text-decoration: underline;
+}
+
+.featuredPlugin {
+  -webkit-box-shadow: inset 3px 0 0 0 #4CC2E4;
+  -moz-box-shadow: inset 3px 0 0 0 #4CC2E4;
+  box-shadow: inset 3px 0 0 0 #4CC2E4;
+  border-left-width: 0px;
+}
+
+.pluginCardContents {
+  border: 1px solid #363636;
+  margin-bottom: 10px;
+  position: relative;
+  background: white;
+}
+
+.primaryContent {
+  display: flex;
+  display: -webkit-flex;
+  flex-direction: column;
+  -webkit-flex-direction: column;
+}
+
+.primaryContent .header small {
+  color: #83878B;
+}
+
+.primaryContent .pluginAuthor {
+  font-weight: bold;
+}
+
+.primaryContent .pluginDesc {
+  -webkit-flex-grow: 1;
+  flex-grow: 1;
+  font-size: 1em;
+  color: #404040;
+}
+
+.supportedPlatforms {
+  width: 75%;
+  display: inline-block;
+  list-style-type: none;
+  text-align: left;
+  font-size: 0.8em;
+  padding-left: 0;
+}
+
+.supportedPlatforms li {
+  margin: 0 5px 0 0;
+  display: inline-block;
+  border: 1px solid #F2F2F2;
+  padding: 2px 10px;
+  color: #7A828B;
+}
+
+.secondaryContent {
+  min-height: 7rem;
+  width: 100%;
+  display: block;
+  text-align: right;
+  font-size: 0.9em;
+  color: #7A828B;
+}
+
+.extraInfo p {
+  margin-top: 2px;
+  margin-bottom: 2px;
+}
+
+.extraInfo {
+  display: inline-block;
+  width: 25%;
+}
+
+.clickable {
+  cursor: pointer;
+}
+
+/*---------------------------------------------------
+    Misc
+---------------------------------------------------*/
+
+.icon {
+  background: url('../img/sprite.png') no-repeat;
+}
+
+/*---------------------------------------------------
+    Layout - Header
+---------------------------------------------------*/
+#header {
+  position: fixed;
+  z-index: 10;
+  left: 0;
+  right: 0;
+  background: #fff;
+  border-bottom: 1px solid #ddd;
+}
+#header .shadow {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: -3px;
+  height: 3px;
+  background: url('../img/shadow.png');
+}
+
+.logo {
+  top: 7rem;
+  width: 11rem;
+  height: 3.7rem;
+  background-size: 11.2rem 42.5rem;
+}
+
+.logo,
+.closing {
+  background: url('../img/sprite.png') no-repeat;
+  -webkit-transition: background 0.25s linear;
+  -moz-transition: background 0.25s linear;
+  transition: background 0.25s linear;
+  background-color: #3b4854;
+  background-position: 0 0px;
+  position: absolute;
+  left: 0;
+  top: 5px;
+  width: 220px;
+  height: 75px;
+}
+.logo:hover {
+  background-color: #4cc2e4;
+}
+.menu {
+  padding: 16px 0;
+  float: right;
+}
+.menu a {
+  text-decoration: none;
+  -webkit-transition: background 0.25s linear;
+  -moz-transition: background 0.25s linear;
+  transition: background 0.25s linear;
+  padding: 8px;
+  margin: 0 8px;
+  line-height: 55px;
+}
+.menu a:hover,
+.menu a:link,
+.menu a:visited {
+  color: #4cc2e4;
+}
+.menu-dropdown {
+  display: none;
+  position: absolute;
+  right: 16px;
+  top: 32px;
+  width: 40%;
+}
+.menu-dropdown select {
+  width: 100%;
+}
+
+/*---------------------------------------------------
+    Code
+---------------------------------------------------*/
+pre, code {
+  font-size: 12px;
+  font-family: Consolas, "Liberation Mono", Courier, monospace;
+}
+
+code {
+  margin: 0 0px;
+  padding: 0px 0px;
+  white-space: nowrap;
+  border: 1px solid #eaeaea;
+  background-color: #f8f8f8;
+  border-radius: 3px;
+}
+
+pre>code {
+  margin: 0;
+  padding: 0;
+  white-space: pre;
+  border: none;
+  background: transparent;
+}
+
+pre {
+  background-color: #f8f8f8;
+  border: 1px solid #ccc;
+  font-size: 1.3rem;
+  line-height: 1.9rem;
+  overflow: auto;
+  padding: 0.6rem 1rem;
+  border-radius: 3px;
+}
+
+pre code {
+  background-color: transparent;
+  border: none;
+}
+
+
+/*---------------------------------------------------
+    Mobile
+---------------------------------------------------*/
+
+/* Extra small devices (phones, less than 768px) */
+/* No media query since this is the default in Bootstrap */
+.contentwrap {
+  margin: 0 auto;
+  max-width: 80rem;
+}
+.menu {
+  display: none;
+}
+.menu-dropdown {
+  display: block;
+  top: 1.6rem;
+}
+
+h2 {
+  font-size: 2rem;
+  padding-top: 0;
+  letter-spacing: 0;
+}
+
+.wrap {
+  position: relative;
+  margin-left: 1.2rem;
+  margin-right: 1.2rem;
+}
+
+#header,
+.header-placeholder {
+  height: 5.2rem;
+}
+
+.logo {
+  top: 0.7rem;
+  width: 11rem;
+  height: 3.7rem;
+  background-size: 11.2rem 42.5rem;
+}
+
+#pluggy {
+  display: none;
+}
+
+#discovermessage {
+  height: auto;
+  padding: 0 4rem 0 4rem;
+}
+
+#discovermessage h1 {
+  font-size: 4rem;
+}
+
+.icon {
+  background-position: 0px -110px;
+  background-size: 112px 425px;
+  display: block;
+  font-size: 2.2rem;
+  padding: 2rem 4.8rem 2rem 4.8rem;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+
+/* Small devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+  #discovermessage {
+    height: 20rem;
+    padding: 0 0 0 4rem;
+  }
+  #discovermessage h1 {
+    font-size: 5rem;
+  }
+  .icon {
+    background-position: 0px -220px;
+    background-size: auto;
+    font-size: 2.4rem;
+    padding: 5.4rem 0 4.8rem 7.8rem;
+  }
+  h2 {
+    font-size: 2.2rem;
+    padding: 5.4rem 0;
+  }
+  #pluggy {
+    display: inline-block;
+  }
+}
+
+/* Medium devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+  h2 {
+    font-size: 2.4rem;
+    padding-top: 5.4rem 0;
+  }
+  #header,
+  .header-placeholder {
+    height: 9rem;
+  }
+  .menu {
+    display: block;
+  }
+  .menu-dropdown {
+    display: none;
+  }
+  .contentwrap {
+    margin: 0 auto;
+    max-width: 80rem;
+  }
+  #wrap,
+  .wrap {
+    width: auto;
+    margin-left: 12rem;
+    margin-right: 12rem;
+  }
+  .logo {
+    top: 5px;
+    width: 220px;
+    height: 75px;
+    background-size: auto;
+  }
+  .icon {
+    background-position: 0 -220px;
+    padding-left: 78px;
+  }
+  .icon-about {
+    background-position: 0 -220px;
+  }
+}
+
+/* Large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+  h2 {
+      padding: 4.8rem 0;
+      font-size: 3.4rem;
+  }
+  .contentwrap {
+    max-width: 100rem;
+  }
+  #wrap,
+  .wrap {
+    width: 1008px;
+    margin: 0 auto;
+  }
+}

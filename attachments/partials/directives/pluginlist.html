@@ -1,0 +1,28 @@
+<div ng-show="plugins.length > 0">
+    <div class="row pluginHeader">
+        <div class="column-9--hand column-8--lap">
+            <a ng-click="setOrderBy('key')">Plugin ID &amp; description</a>
+            <span ng-show="orderValue == 'key'"><i ng-show="reverse" class="icon-up-dir"></i><i ng-hide="reverse" class="icon-down-dir"></i>
+            </span>
+        </div>
+        <div class="column-3--hand column-2--lap center">
+            Version
+        </div>
+        <div class="column-2--hand center invisible--hand visible--lap">
+            <a ng-click="setOrderBy('downloads')">Downloads</a>
+            <span ng-show="orderValue == 'downloads' "><i ng-show="reverse" class="icon-up-dir"></i><i ng-hide="reverse" class="icon-down-dir"></i></span>
+        </div>
+    </div>
+    <div ng-repeat="plugin in plugins | platformFilter: selectedPlatforms() | orderBy:orderValue:reverse" class="row pluginItem">
+        <div class="column-9--hand column-8--lap">
+            <div><a ng-href="#/package/{{plugin.key}}">{{plugin.key}}</a></div>
+            <div class="pluginItemDescription">{{plugin.value.description}}</div>
+        </div>
+        <div class="column-3--hand column-2--lap center">
+            <div class="pluginItemVersion">{{plugin.value.version}}</div>
+        </div>
+        <div class="column-2--hand invisible--hand visible--lap center">
+            <div class="pluginItemDownloads">{{plugin.downloads}}</div>
+        </div>
+    </div>
+</div>

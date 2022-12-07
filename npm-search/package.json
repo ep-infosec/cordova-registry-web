@@ -1,0 +1,44 @@
+{
+  "name": "Cordova-Plugin-Search-WWW",
+  "version": "0.0.1",
+  "description": "Website for Cordova Plugin Search",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/apache/cordova-registry-web.git"
+  },
+  "author": "Apache Software Foundation",
+  "license": "Apache 2.0",
+  "bugs": {
+    "url": "https://github.com/apache/cordova-registry-web/issues"
+  },
+  "homepage": "https://github.com/apache/cordova-registry-web",
+  "devDependencies": {
+    "baconjs": "^0.7.70",
+    "browserify": "^10.2.4",
+    "classnames": "^2.1.2",
+    "envify": "^3.4.0",
+    "gulp": "^3.9.0",
+    "gulp-concat": "^2.5.2",
+    "gulp-if": "^1.2.5",
+    "gulp-imagemin": "^2.2.1",
+    "gulp-serve": "^1.0.0",
+    "gulp-uglify": "^1.2.0",
+    "gulp-util": "^3.0.5",
+    "react": "^0.13.3",
+    "react-tools": "^0.13.3",
+    "reactify": "^1.1.1",
+    "vinyl-buffer": "^1.0.0",
+    "vinyl-source-stream": "^1.1.0",
+    "yargs": "^3.12.0"
+  },
+  "maintainers": [
+    {
+      "name": "muratsu",
+      "email": "sutunc@gmail.com"
+    }
+  ]
+}
